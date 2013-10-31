@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+<p>{{ Dairy.farmer_name }}</p>
+<p>{{ Dairy.farmer_address  }}</p>
+</div>
+{% endblock %}

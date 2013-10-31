@@ -1,0 +1,29 @@
+body{
+background-color:None;
+background-image: 
+
+}
+#page {
+width:300px;
+text-align:left;
+margin:10px;
+background-color:red;
+}
+#sidebar{
+float:left;
+width:150px;
+height:100px;
+border:1px solid green;
+
+}
+#div{
+width:100%;
+color:white;
+text-align:left;
+border:5px solid green;
+background-color:gray;
+}
+#txt{
+bottom:250;
+height:200px;
+}

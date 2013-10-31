@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static "assets/css/default.css" %}">
+
+</head>
+<body>
+<div id="div">
+animal_type<input type="text" /></br>
+number_animals<input type="text" /></br>
+animal_insurance<input type="text" /></br>
+insurance_amount<input type="text" /></br>
+insurance_date<input type="text" /></br>
+
+</div>
+
+<input id="b_tton" type="button" value="submit" />
+<a href="/Dairy/farmers"><input type="button" value="back" /></a>
+
+</body>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+a=request.GET
+<div>
+{% for each in a %}
+<ul>
+<li>%a[each]</li>
+</ul>
+	
+</div>
+{% endfor %}
+
+
+{% endblock %}
+

@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static "assets/css/default.css" %}">
+
+</head>
+<body>
+<script type="text/javascript" src="{% static "admin/js/jquery.js" %}"></script>
+<script>
+
+$(document).ready(function() {
+$("#b_tton").click(function() {
+ajax_object = {}
+
+$(".id").each(function(each){
+	ajax_object[$(this).attr('id')] = $(this).val()
+	//ajax_object.$(each).id.$(each).val()	
+});
+console.log(ajax_object)
+$.get("/Dairy/hello/",ajax_object,function(data) {
+$("#back").html(data);
+});
+});
+});
+</script>
+<div id="div">
+farmer_id:<input class="id" id="id_1"type="text" /></br>
+farmer_name:<input  class="id" id="id_2"type="text" /></br>
+farmer_joindate :<input  class="id" id="id_3"type="text" /></br>
+farmer_address:
+<br /><textarea  type="text"/> </textarea>
+</div>
+<input id="b_tton" type="button" value="submit" />
+<a href="/Dairy/farmers"><input type="button" value="back" /><a>
+<div id="back"></div>
+</body>
+</html>
+

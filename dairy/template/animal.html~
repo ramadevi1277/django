@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1>animal details</h1>
+{% for Animal in animal %}
+<div>
+<h1><a href="/animal/get/{{ Animal.id }}/">{{ Animal.animal_name }}</a></h1>
+</div>
+{% endfor %}
+
+</body>
+</html>
+

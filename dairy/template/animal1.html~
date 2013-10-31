@@ -1,0 +1,8 @@
+<html>
+<body>
+<h1>{{ A.farmer_name }}</h1>
+<p>{{ Farmer.farmer_address }}</p>
+<p>{{ Farmer.farmer_id }}</p>
+</body>
+</html>
+

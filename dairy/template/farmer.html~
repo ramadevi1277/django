@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>farmer details</h1>
+{% for Farmer in farmer %}
+<div>
+<h1><a href="/Dairy/get/{{ farmer.id }}/">{{ Farmer.farmer_name }}</a></h1>
+<p>{{ Farmer.farmer_address }}</p>
+<p>{{ Farmer.farmer_id }}</p>
+</div>
+{% endfor %}
+
+</body>
+</html>
+

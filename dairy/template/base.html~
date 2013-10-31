@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static "assets/css/default.css" %}">
+</head>
+<body>
+<div id="div">
+<a href="/Dairy/farmer_details/"><input type="button" value="farmer_details" /></a>
+<a href="/Dairy/animal_details/"><input type="button" value="animal_details" /></a>
+<a href="/Dairy/milk_details/"><input type="button" value="milk_details" /></a>
+
+</div>
+<div>{% block content %}{% endblock %}</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body{
+background-color:None;
+background-image: 
+
+}
+#div{
+width:100%;
+color:white;
+text-align:left;
+border:5px solid green;
+background-color:gray;
+}
+#txt{
+bottom:250;
+height:200px;
+}
